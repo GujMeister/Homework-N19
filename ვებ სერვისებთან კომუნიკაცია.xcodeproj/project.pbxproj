@@ -10,9 +10,15 @@
 		859C18462BD28F3D00123DEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859C18452BD28F3D00123DEF /* AppDelegate.swift */; };
 		859C18482BD28F3D00123DEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859C18472BD28F3D00123DEF /* SceneDelegate.swift */; };
 		859C184A2BD28F3D00123DEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859C18492BD28F3D00123DEF /* ViewController.swift */; };
-		859C184D2BD28F3D00123DEF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 859C184C2BD28F3D00123DEF /* Base */; };
 		859C184F2BD28F4000123DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859C184E2BD28F4000123DEF /* Assets.xcassets */; };
 		859C18522BD28F4000123DEF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 859C18512BD28F4000123DEF /* Base */; };
+		859C185A2BD2982500123DEF /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859C18592BD2982500123DEF /* NewsCell.swift */; };
+		859C185E2BD29F9500123DEF /* ImediNewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859C185D2BD29F9500123DEF /* ImediNewsModel.swift */; };
+		859C18602BD29FE300123DEF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859C185F2BD29FE300123DEF /* Network.swift */; };
+		859C18622BD2C5FF00123DEF /* FiraGO-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 859C18612BD2C5FE00123DEF /* FiraGO-Regular.ttf */; };
+		859C18642BD2C63800123DEF /* SpaceGrotesk-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 859C18632BD2C63800123DEF /* SpaceGrotesk-Regular.ttf */; };
+		859C18662BD2CBF300123DEF /* FiraGO-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 859C18652BD2CBF300123DEF /* FiraGO-Bold.ttf */; };
+		859C186C2BD2D4CD00123DEF /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859C186B2BD2D4CD00123DEF /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +26,16 @@
 		859C18452BD28F3D00123DEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		859C18472BD28F3D00123DEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		859C18492BD28F3D00123DEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		859C184C2BD28F3D00123DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		859C184E2BD28F4000123DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		859C18512BD28F4000123DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		859C18532BD28F4000123DEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		859C18592BD2982500123DEF /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		859C185D2BD29F9500123DEF /* ImediNewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImediNewsModel.swift; sourceTree = "<group>"; };
+		859C185F2BD29FE300123DEF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		859C18612BD2C5FE00123DEF /* FiraGO-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraGO-Regular.ttf"; sourceTree = "<group>"; };
+		859C18632BD2C63800123DEF /* SpaceGrotesk-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Regular.ttf"; sourceTree = "<group>"; };
+		859C18652BD2CBF300123DEF /* FiraGO-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraGO-Bold.ttf"; sourceTree = "<group>"; };
+		859C186B2BD2D4CD00123DEF /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,53 @@
 		859C18442BD28F3D00123DEF /* ვებ სერვისებთან კომუნიკაცია */ = {
 			isa = PBXGroup;
 			children = (
-				859C18452BD28F3D00123DEF /* AppDelegate.swift */,
-				859C18472BD28F3D00123DEF /* SceneDelegate.swift */,
+				859C186A2BD2D23D00123DEF /* Resources */,
+				859C185C2BD2984000123DEF /* App */,
+				859C185B2BD2982F00123DEF /* TableViewCell */,
+				859C18692BD2D22200123DEF /* API */,
 				859C18492BD28F3D00123DEF /* ViewController.swift */,
-				859C184B2BD28F3D00123DEF /* Main.storyboard */,
+				859C186B2BD2D4CD00123DEF /* DetailsViewController.swift */,
 				859C184E2BD28F4000123DEF /* Assets.xcassets */,
 				859C18502BD28F4000123DEF /* LaunchScreen.storyboard */,
 				859C18532BD28F4000123DEF /* Info.plist */,
 			);
 			path = "ვებ სერვისებთან კომუნიკაცია";
+			sourceTree = "<group>";
+		};
+		859C185B2BD2982F00123DEF /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				859C18592BD2982500123DEF /* NewsCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		859C185C2BD2984000123DEF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				859C18472BD28F3D00123DEF /* SceneDelegate.swift */,
+				859C18452BD28F3D00123DEF /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		859C18692BD2D22200123DEF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				859C185D2BD29F9500123DEF /* ImediNewsModel.swift */,
+				859C185F2BD29FE300123DEF /* Network.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		859C186A2BD2D23D00123DEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				859C18612BD2C5FE00123DEF /* FiraGO-Regular.ttf */,
+				859C18652BD2CBF300123DEF /* FiraGO-Bold.ttf */,
+				859C18632BD2C63800123DEF /* SpaceGrotesk-Regular.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +176,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				859C184F2BD28F4000123DEF /* Assets.xcassets in Resources */,
+				859C18662BD2CBF300123DEF /* FiraGO-Bold.ttf in Resources */,
 				859C18522BD28F4000123DEF /* Base in Resources */,
-				859C184D2BD28F3D00123DEF /* Base in Resources */,
+				859C18642BD2C63800123DEF /* SpaceGrotesk-Regular.ttf in Resources */,
+				859C18622BD2C5FF00123DEF /* FiraGO-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +192,10 @@
 			files = (
 				859C184A2BD28F3D00123DEF /* ViewController.swift in Sources */,
 				859C18462BD28F3D00123DEF /* AppDelegate.swift in Sources */,
+				859C18602BD29FE300123DEF /* Network.swift in Sources */,
+				859C185A2BD2982500123DEF /* NewsCell.swift in Sources */,
+				859C186C2BD2D4CD00123DEF /* DetailsViewController.swift in Sources */,
+				859C185E2BD29F9500123DEF /* ImediNewsModel.swift in Sources */,
 				859C18482BD28F3D00123DEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +203,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		859C184B2BD28F3D00123DEF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				859C184C2BD28F3D00123DEF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		859C18502BD28F4000123DEF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,9 +345,8 @@
 				INFOPLIST_FILE = "ვებ სერვისებთან კომუნიკაცია/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,9 +372,8 @@
 				INFOPLIST_FILE = "ვებ სერვისებთან კომუნიკაცია/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
